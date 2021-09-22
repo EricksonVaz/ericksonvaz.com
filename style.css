@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    user-select: none;
+}
+body{
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(94, 94, 94);
+}
+body.dark{
+    background-color: rgb(43, 43, 43);
+    color: rgb(145, 145, 145);
+}
+a,a:hover{
+    text-decoration: none;
+    color: black;
+}
+.header-options{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    padding: 15px;
+}
+.img-mode{
+    margin-right: 15px;
+}
+.switch-mode{
+    display: flex;
+}
+.img-mode{
+    width: 20px;
+}
+main,body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-title{
+    margin: 10px 0;
+}
+.main-icon{
+    width: 300px;
+    margin: 40px 0;
+    opacity: .6;
+}
+.sub-title,.desc-text{
+    margin: 20px;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-link,.btn-option{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(46, 45, 45, 0.24);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.social-link:first-of-type{
+    margin-left: 10px;
+}
+.social-link{
+    width: 117px;
+}
+body.dark .social-link,body.dark .btn-option{
+    background-color: rgb(54, 54, 54);
+    box-shadow: 0 0 5px rgba(226, 226, 226, 0.24);
+    color: rgb(248, 248, 248);
+}
+.btn-option{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.social-icons{
+    width: 25px;
+    margin-right: 5px;
+}
+body.dark .social-icons{
+    opacity: .9;
+}
+footer{
+    padding: 15px 0;
+}
+
+@media screen and (max-width:815px){
+    .header-options{
+        flex-direction: column;
+        width: auto;
+        right: 0;
+        top: 10%;
+        opacity: .8;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:400px){
+    .main-title{
+        font-size: 25px;
+    }
+}
