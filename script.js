@@ -8,7 +8,7 @@
     const imgSwitchLanguage = btnSwitchLanguage.querySelector("img");
     const labelLanguage = btnSwitchLanguage.querySelector(".label-language");
 
-    let currentBrowserLanguage = navigator.language.split("-")[0];
+    let currentBrowserLanguage = navigator.language.split("-")[0]=="en"?"en":"pt";
     const i18n = {
         en:{
             "light":"light",
